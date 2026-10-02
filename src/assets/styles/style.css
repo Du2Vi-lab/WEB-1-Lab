@@ -9,3 +9,7 @@
 .test {
     color: red !important;
 }
+
+body {
+    font-family: "Inter", sans-serif;
+}
