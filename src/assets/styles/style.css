@@ -13,3 +13,88 @@
 body {
     font-family: "Inter", sans-serif;
 }
+
+/* Параграфы */
+.text-primary {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+/* Стиль в классе title-main (h1) */
+.title-main {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+/* Стиль в классе contacts-title (h2) */
+.contacts-title {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+/* Стиль в классе title-sub (h3) */
+.title-sub {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Стиль в классе title-section (h4) */
+.title-section {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+
+
+
+
+
+/* Для всех полей ввода (input, textarea). Класс и стиль соотв.-но */
+.form-input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+/* Форма на страницы “Контакты”. Изображение на задний фон */
+.contacts-form-container {
+    padding: 20px;
+    background-image: url('WEB1_wallpapers.jpg'); 
+    background-color: #FFFFFF; /* На случай, если картинка не подгрузится - будет стоять фон этого цвета */
+}
+
+/* g. Кнопке отправки формы*/
+.btn-submit {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+/* Шапка сайта. Элемент хлебных крошек */
+.breadcrumps {
+    padding: 10px 0;
+}
+
+.breadcrumps_item {
+    text-decoration: none;
+    color: #1F3F68;
+    font-size: 14px;
+}
+
+.breadcrumps_item.active {
+    font-weight: bold;
+}
+
+.breadcrumps_separator {
+    color: #356EAD;
+    margin: 0 5px;
+}

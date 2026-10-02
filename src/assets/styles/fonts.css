@@ -21,3 +21,21 @@
          url("/static/fonts/Inter-Regular.woff2") format("woff");
     font-weight: 400;
 }
+
+@font-face {
+    font-family: "Inter";
+    src: local('Inter Italic'), local('Inter-Italic'),
+        url("/static/fonts/Inter-Italic.woff2") format("woff2"),
+        url("/static/fonts/Inter-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("/static/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+    url("/static/fonts/OpenSans-Regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

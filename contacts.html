@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+	<meta charset = "UTF-8">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="./src/assets/styles/style.css">
+</head>
+<body>
+	<header>
+		<img src = "logotip.png" alt = "Логотип сайта">
+		<ul>
+			<li><a href = "index.html">Главная</a></li>
+			<li><a href = "contacts.html">Контакты</a></li>
+		</ul>
+
+		<nav class="breadcrumps">
+			<a href="index.html" class="breadcrumps_item">Главная</a>
+			<span class="breadcrumps_separator">/</span>
+			<span class="breadcrumps_item active">Контакты</span>
+		</nav>
+	</header>
+	<main>
+		<h2 class="contacts-title">Contacnt Us</h2>
+		<p class="text-primary">Параграф с произвольным текстом: не более 10 символов.</p>
+		<img src= "randomimage.jpg" alt = "Жпг изображение" style = "max-width: 350 px">
+		
+		<h4 class = "title-section">Address</h4>
+		<p class = "text-primary">Контакт</p>
+		
+		<h4 class = "title-section">Phone</h4>
+		<ul>
+			<li>+7(345)222-81-29</li>
+			<li>+7(345)222-81-67</li>
+		</ul>
+		
+		<h4 class="title-section">Online service</h4>
+		<ul>
+			<li><a href = "https://docs.google.com">Ссылка на сайт</a></li>
+			<li><a href = "mailto:support@gmail.com">Почта тех.поддержки</a></li>
+		</ul>
+		<h4 class="title-section">Send us message</h4>
+
+		<div class=" contacts-form-container">
+			<form>
+				<label>Full Name <input type="text" name="fullname" class="form-input"></label><br><br>
+				<label>Email <input type="email" name="email" class="form-input"></label><br><br>
+				<label>Message <textarea name="message" class="form-input" rows="4"></textarea></label><br><br>
+				<button type="submit" class="button-submit">submit</button>
+        	</form>
+		</div>
+	</main>
+	<footer>
+		<h3 class="title-sub">Подвал нашего сайта</h3>
+		<p class="text-primary">Небольшой текст для подвала, содержащий ровно семь слов задания.</p>
+		<hr>
+		<ul>
+			<li>Произвольный текст про пять слов</li>
+			<li>+7(345)222-81-29</li>
+			<li>google@gmail.com</li>
+		</ul>
+		<p class="text-primary">"Все права защищены"</p>
+	</footer>
+</body>
+</html>
