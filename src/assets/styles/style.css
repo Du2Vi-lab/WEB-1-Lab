@@ -14,8 +14,56 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+/**/
+
+/* Шапка сайта. Элемент хлебных крошек */
+.breadcrumps {
+    display: flex;
+    padding: 10px 0; /*отступ сверху и снизу*/
+}
+.breadcrumps_item {
+    display: inline-block; 
+    text-decoration: none; /*удаляет подчёркивания у ссылкок*/
+    color: #1F3F68; /*цвет текста*/
+    background-color: #7da4d1; /*фоновый цвет*/
+    background: linear-gradient(to bottom, #FFFFFF, #7da4d1); /*цветопереход вверх от и до*/
+    margin-right: -15px; /*отступ справа (влево получается), чтобы соеденить 2 фона в 1*/
+    font-size: 14px; /*размер шрифта*/
+
+    padding: 8px 25px; /*делает рамку шире (высота  ширина)*/
+
+    border-right: 2px solid #000000;
+    /*Закругление (границы одной вкладки) сверху и снизу*/
+    border-top-right-radius: 25px 40px;
+    border-bottom-right-radius: 25px 40px;
+    box-shadow: 2px 0 2px #494949;
+
+}
+
+/*настройка слоёв, 1й слой над 2м над 3м ...*/
+.breadcrumps_item:nth-child(1) { z-index: 5; }
+.breadcrumps_item:nth-child(2) { z-index: 4; }
+.breadcrumps_item:nth-child(3) { z-index: 3; }
+
+.breadcrumps_item.active { /*текущая (активная) вкладка*/
+    font-weight: bold;
+}
+
+.breadcrumps_separator {
+    color: #000000; /*цвет сепаратора ")"*/
+    margin: 0 5px; /*отступ слева и справа*/
+    font-size: 18;
+}
+
+/**/
+
+/*шрифт италик*/
+.text-italic {
+    font-style: italic;
+}
+
 /* Параграфы */
-.text-primary {
+.paragraph {
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
@@ -72,28 +120,4 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
-}
-
-/* Шапка сайта. Элемент хлебных крошек */
-.breadcrumps {
-    padding: 10px 0;
-}
-
-.breadcrumps_item {
-    text-decoration: none;
-    color: #1F3F68;
-    font-size: 14px;
-}
-
-.breadcrumps_item.active {
-    font-weight: bold;
-}
-
-.breadcrumps_separator {
-    color: #356EAD;
-    margin: 0 5px;
-}
-
-.text-italic {
-    font-style: italic;
 }
