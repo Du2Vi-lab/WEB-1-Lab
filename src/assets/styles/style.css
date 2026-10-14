@@ -2,19 +2,9 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
-}
-
-.test {
-    color: red !important;
-}
-
-body {
-    font-family: "Inter", sans-serif;
-}
-
 /**/
+
+/*чекнуть инструменты разработчика*/
 
 /* Шапка сайта. Элемент хлебных крошек */
 .breadcrumps {
@@ -36,8 +26,7 @@ body {
     /*Закругление (границы одной вкладки) сверху и снизу*/
     border-top-right-radius: 25px 40px;
     border-bottom-right-radius: 25px 40px;
-    box-shadow: 2px 0 2px #494949;
-
+    box-shadow: 2px 0 2px #494949; /*затенение границ фона*/
 }
 
 /*настройка слоёв, 1й слой над 2м над 3м ...*/
@@ -52,64 +41,57 @@ body {
 .breadcrumps_separator {
     color: #000000; /*цвет сепаратора ")"*/
     margin: 0 5px; /*отступ слева и справа*/
-    font-size: 18;
-}
+    font-size: 18px;
+}*/
+
 
 /**/
 
-/*шрифт италик*/
 .text-italic {
     font-style: italic;
 }
 
-/* Параграфы */
 .paragraph {
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
 }
 
-/* Стиль в классе title-main (h1) */
+/*h1-h4*/
 .title-main {
     font-size: 64px;
     color: #1F3F68;
 }
-
-/* Стиль в классе contacts-title (h2) */
 .contacts-title {
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 44px;
     text-align: center;
 }
-
-/* Стиль в классе title-sub (h3) */
 .title-sub {
     font-size: 36px;
     text-align: center;
 }
-
-/* Стиль в классе title-section (h4) */
 .title-section {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
 }
 
-/* Для всех полей ввода (input, textarea). Класс и стиль соотв.-но */
+/*полея ввода*/
 .form-input {
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
 }
-/* Форма на страницы “Контакты”. Изображение на задний фон */
+/* задник (фон) на форме заполнения контактов*/
 .contacts-form-container {
     padding: 20px;
-    background-image: url('WEB1_wallpapers.jpg'); 
-    background-color: #FFFFFF; /* На случай, если картинка не подгрузится - будет стоять фон этого цвета */
+    background-image: url('../img/WEB1_wallpapers.jpg'); 
+    background-color: #FFFFFF;
 }
 
-/* Кнопке отправки формы*/
+/*кнопка отправки формы*/
 .button-submit {
     background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
