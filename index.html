@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang = "ru">
+
 <head>
 	<meta charset = "UTF-8">
 	<title>Главная страница</title>
 	<link rel="stylesheet" href="src/assets/styles/style.css">
 </head>
+
 <body>
 	<header>
 		<img src = "src/assets/img/logotip.jpg" alt = "Логотип сайта">
@@ -13,16 +15,53 @@
 			<span class="breadcrumps_item active">Главная</span>
 		</nav>
 	</header>
+
 	<main>
-		<h1 class="title-main">Всего три слова</h1>
-		<p class="paragraph">Параграф с произвольным текстом</p>
-		<h3 class="title-sub">Всего три слова</h3>
-		<h4 class="title-section">Здесь содержится ровно пять слов</h4>
-		<p class="paragraph">Ещё один параграф с произвольным текстом, в котором не более 15 слов</p>
-		<h3 class="title-sub">Ещё 3 слова</h3>
-		<p class="paragraph text-italic">Ещё один параграф с произвольным текстом, где меньше 11 слов.</p>
+		<section class="block-main">
+			<h1 class="title-main">Всего три слова</h1>
+			<p class="paragraph">Параграф с произвольным текстом</p>
+		</section>
+
+		<hr>
+		<!--- ------------------------------------------------------- -->
+		<section class="block-features">
+			<article class="feature-item">
+				<h3 class="title-sub">Всего три слова</h3>
+				<h4 class="title-section">Здесь содержится ровно пять слов</h4>
+				<p class="paragraph">Ещё один параграф с произвольным текстом, в котором не более 15 слов</p>
+				<img src="src/assets/img/lab3_img.jpg" alt="Здесь должна быть картинка секции">
+			</article>
+
+			<hr>
+
+			<article class="feature-item">
+				<h3 class="title-sub">Ещё 3 слова</h3>
+				<p class="paragraph text-italic">Ещё один параграф с произвольным текстом, где меньше 11 слов.</p>
+				
+				<ul class="feature-list"> 
+					<li>Первая строка текста</li>
+					<li>Вторая строка с текстом</li>
+				</ul>
+			</article>
+		</section>
+		<!--- ------------------------------------------------------- -->
+
+		<!-- ДОП БЛОК по заданию-->
+		<aside class="sidebar-moreinfo">
+			<h4 class="title-section">Доп инф.-ия</h4>
+			<p class="paragraph">Оставь надежду всяк сюда входящих</p>
+			<div class="sidebar-donat">
+				<form>
+					<label>Писать буквы: <input type="text" name="creditcard" class="form-input"></label>
+					<button type="submit" class="button-submit">Отправить</button>
+				</form>
+			</div>
+		</aside>
+		<!-- --------- -->
 	</main>
+
 	<hr>
+
 	<footer>
 		<h3 class="title-sub">Заголовок трёх слов</h3>
 		<p class="paragraph">Параграф с произвольным текстом: не более 10 слов.</p>

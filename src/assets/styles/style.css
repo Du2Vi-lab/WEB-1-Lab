@@ -44,9 +44,52 @@
     font-size: 18px;
 }
 
+/*section, article с 3-лабы*/
+/*section*/
+.block-main {
+    
+}
+.block-features {
+
+}
+.section-contact-us {
+
+}
+.section-contacts {
+
+}
+
+/*article*/
+.feature-item {
+
+}
+.feature-list {
+
+}
+.article-contacts {
+}
+.article-phonenumber {
+
+}
+.article-href {
+
+}
+.section-feedback {
+
+}
+/*aside*/
+.sidebar-moreinfo {
+    font-size: 16px;
+}
+/*div*/
+.sidebar-donat {
+    font-size: 16px;
+}
+.SECTION-7 {
+    font-size: 16px;
+}
 
 /**/
-
 .text-italic {
     font-style: italic;
 }
@@ -103,3 +146,5 @@
     color: #FFFFFF;
     text-transform: uppercase;
 }
+
+/* -------------------------------------------------------- */
