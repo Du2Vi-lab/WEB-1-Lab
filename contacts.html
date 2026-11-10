@@ -16,10 +16,16 @@
 	</header>
 	
 	<main>
-		<!-- ---------------- -->
 		<section class="section-contact-us">
 			<h2 class="contacts-title">Contact Us</h2>
 			<p class="paragraph">Параграф с произвольным текстом: не более 10 символов.</p>
+			<ul>
+				<li>Контактная информация</li>
+			</ul>
+			<form>
+				<label>Поиск по сайту: <input type="text" name="search" class="form-input"></label>
+				<button type="submit" class="button-submit">Найти</button>
+			</form>
 			<img src= "src/assets/img/randomimage.jpg" alt = "Жпг изображение" style = "max-width: 350px;">
 		</section>
 		
@@ -29,6 +35,14 @@
 			<article class="article-contacts">
 				<h4 class = "title-section">Address</h4>
 				<p class = "paragraph">Контакт</p>
+				<ul>
+					<li>Город, Улица, Дом</li>
+				</ul>
+				<form>
+					<label>Ввести адрес: <input type="text" name="user_address" class="form-input"></label>
+					<button type="submit" class="button-submit">Сохранить</button>
+				</form>
+				<img src= "src/assets/img/randomimage.jpg" alt = "Жпг изображение" style = "max-width: 350px;">
 			</article>
 
 			<hr>
@@ -39,16 +53,26 @@
 					<li>+7(345)222-81-29</li>
 					<li>+7(345)222-81-67</li>
 				</ul>
-			<article>
+				<form>
+					<label>Ввести номер телефона: <input type="tel" name="user_phone" class="form-input"></label>
+					<button type="submit" class="button-submit">Позвонить</button>
+				</form>
+				<img src= "src/assets/img/randomimage.jpg" alt = "Жпг изображение" style = "max-width: 350px;">
+			</article>
 			
 			<hr>
 		
 			<article class="article-href">
 				<h4 class="title-section">Online service</h4>
 				<ul>
-					<li><a href = "https://docs.google.com">Ссылка на сайт</a></li>
+					<li><a href = "https://google.com">Ссылка на сайт</a></li>
 					<li><a href = "mailto:support@gmail.com">Почта тех.поддержки</a></li>
 				</ul>
+				<form>
+					<label>Ввести ссылку: <input type="url" name="user_link" class="form-input"></label>
+					<button type="submit" class="button-submit">Перейти</button>
+				</form>
+				<img src= "src/assets/img/randomimage.jpg" alt = "Жпг изображение" style = "max-width: 350px;">
 			</article>
 		</section>
 
@@ -56,8 +80,11 @@
 
 		<section class="section-feedback">
 			<h4 class="title-section">Send us message</h4>
-
-			<div class=" contacts-form-container">
+			<p class="paragraph">Заполните форму ниже для связи.</p>
+			<ul>
+				<li>Обратная связь онлайн</li>
+			</ul>
+			<div class="contacts-form-container">
 				<form>
 					<label>Full Name <input type="text" name="fullname" class="form-input"></label><br><br>
 					<label>Email <input type="email" name="email" class="form-input"></label><br><br>
@@ -65,18 +92,23 @@
 					<button type="submit" class="button-submit">submit</button>
 				</form>
 			</div>
+			<img src= "src/assets/img/randomimage.jpg" alt = "Жпг изображение" style = "max-width: 350px;">
 		</section>
 	</main>
-
 	<footer>
 		<h3 class="title-sub">Подвал нашего сайта</h3>
 		<p class="paragraph">Небольшой текст для подвала, содержащий ровно семь слов задания.</p>
 		<hr>
 		<ul>
-			<li>Произвольный текст про пять слов</li>
+			<li>Произвольный текст про HTML</li>
 			<li>+7(345)222-81-29</li>
 			<li>google@gmail.com</li>
 		</ul>
+		<form>
+			<label>Подписка на новости: <input type="email" name="subscribe_email" class="form-input" placeholder="Ваш Email"></label>
+			<button type="submit" class="button-submit">ОК</button>
+		</form>
+		<img src= "src/assets/img/randomimage.jpg" alt = "Жпг изображение" style = "max-width: 350px;">
 		<p class="paragraph">"Все права защищены"</p>
 	</footer>
 </body>

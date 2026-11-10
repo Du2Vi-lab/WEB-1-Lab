@@ -44,6 +44,7 @@
     font-size: 18px;
 }
 
+
 /*section, article с 3-лабы*/
 /*section*/
 .block-main {
@@ -148,3 +149,82 @@
     color: #FFFFFF;
     text-transform: uppercase;
 }
+
+
+
+
+
+/*
+Стили по 3-й лабе
+*/
+/*------------ПОТОЛОК----------*/
+.header-division { /*Напдись IT WEBSITE*/
+    color: #397acf;
+}
+.header-division ul a { /*Список ссылок на страницы*/
+    text-decoration: none;
+    color: #000000;
+}
+.header-division a { /*Ссылки телефонов и почты*/
+    color: #397acf;
+    text-decoration: none
+}
+
+
+
+
+.phone-image, .email-image, 
+.adress-image, .file-image,
+.logo-image { /*Значки телефона и письма*/
+    width: 20px;
+    height: 20px;
+}
+
+
+/*-----------ОСНОВА-----------*/
+.main-division{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    justify-content: space-around;
+
+    background-image: url('../img/WEB1_wallpapers.jpg');
+}
+
+.aside-mama, .aside-papa{
+}
+
+/* .main-division article {
+    flex-grow: 1;
+} */
+/*-----------ПОДВАЛ----------*/
+.footer-division{ /* Подвал как раздел(блок) целиком*/
+
+}
+
+.footer-phone-number{ /* № телефона в подвале*/
+    text-decoration: none
+}
+
+.footer-email{
+    text-decoration: none
+}
+
+.footer-adress{
+
+}
+
+.footer-requests{
+
+}
+
+.footer-quote{
+
+}
+
+
+
+
+
+
+
