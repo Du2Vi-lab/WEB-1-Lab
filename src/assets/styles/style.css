@@ -124,12 +124,12 @@
 }
 
 /*полея ввода*/
-.form-input {
+/* .form-input {
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
-}
+} */
 /* задник (фон) на форме заполнения контактов*/
 .contacts-form-container {
     padding: 20px;
@@ -138,7 +138,7 @@
 }
 
 /*кнопка отправки формы*/
-.button-submit {
+/* .button-submit {
     background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
@@ -148,7 +148,7 @@
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
-}
+} */
 
 
 
@@ -157,21 +157,50 @@
 /*
 Стили по 3-й лабе
 */
+body{
+    background-image: url("src/assets/img/WEB1_wallpapers.jpg");
+    background: #949393;
+
+    /* flex-direction: column; */
+}
 /*------------ПОТОЛОК----------*/
-.header-division { /*Напдись IT WEBSITE*/
-    color: #397acf;
+header{
+    background: #FFFFFF;
+    border-radius: 15px;         /* Скругление углов */
+    margin: 40px; /*отступы вертикальные и горизонтальные*/
+    margin-top: auto;
+
+    /*скролл с потолком*/
+    position: sticky;
+    /* border: 1px solid #000000; */
+    width: 90%;
+    /* z-index: 1000; Чтобы шапка была поверх остальных элементов */
+    top: 40px; /*верхний отступ*/
+    
 }
-.header-division ul a { /*Список ссылок на страницы*/
+.header-division {
+    display: flex; /*выравнивает ВСЁ в 1 строку*/
+    align-items: center; /*в 1 строке все эл-ты по середине*/
+    justify-content: space-around; /*строка разделена на 3 части*/
+
+    /*text-decoration: none; почему-то не работает*/
+    color: #1F3F68; /*А это работает только на надпись IT WEBSITE*/
+}
+/*Ссылки на др. страницы*/
+.header-division nav ul a { /*обращаюсь к надписям*/
     text-decoration: none;
-    color: #000000;
+    color: #333232;
 }
-.header-division a { /*Ссылки телефонов и почты*/
-    color: #397acf;
-    text-decoration: none
+.header-division nav ul { /*структура*/
+    display: flex;
+    gap: 20px;
 }
-
-
-
+/*Ссылки телефонов и почты*/
+.header-contacts a {
+    text-decoration: none;
+    color: #356EAD;
+    margin-right: 20px;
+}
 
 .phone-image, .email-image, 
 .adress-image, .file-image,
@@ -180,51 +209,153 @@
     height: 20px;
 }
 
-
 /*-----------ОСНОВА-----------*/
+.blue-text{
+    color: #1F3F68;
+}
 .main-division{
-    display: flex;
+    margin: 40px;
+    /* display: flex;
     gap: 20px;
     text-decoration: none;
-    justify-content: space-around;
+    justify-content: space-around; */
 
-    background-image: url('../img/WEB1_wallpapers.jpg');
+    /* background-image: url('../img/WEB1_wallpapers.jpg'); */
 }
 
-.aside-mama, .aside-papa{
+.main-introduction{
+    margin-top: 50px;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+.main-leave-contacts{
+    max-width: 600px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 40px 30px; /*высота, отступ вправо*/
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+.leave-contacts-form form {
+    display: flex;
+    align-items: flex-end; /* Выстроит инпуты и кнопку строго в один ряд */
+    gap: 20px;             /* Сделай фиксированный отступ вместо space-around */
+}
+.leave-contacts-form label {
+    display: flex;
+    flex-direction: column; /* Подпись строго над инпутом */
+}
+
+.form-input {
+    border: none;
+    border-bottom: 1px solid #e0e0e0; /* Только полоса снизу, никаких боковых рамок */
+    outline: none; /* Удаляет контур при клике (фокусе) */
+    padding: 10px 0;
+
+    /* font-size: 20px; */ /*из-за увел.-я шрифта оно вылезает за пределы рамки*/
+    color: #333333;            /* Цвет текста */
+}
+
+/*Кнопка подтвердить*/
+.button-submit {
+    background: #3264ee;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: none; /*без рамки у кнопки*/
+    
+    font-size: 16px;
+    text-align: center;
+
+    padding: 15px 20px;
+    max-width: 140px;
 }
 
 /* .main-division article {
     flex-grow: 1;
 } */
 /*-----------ПОДВАЛ----------*/
+footer{
+    background: #0f182c;
+    border-radius: 15px;         /* Скругление углов */
+    margin-top: auto;
+    margin: 40px; /*отступы вертикальные и горизонтальные*/
+    padding: 30px 40px; /*расширение рамки подвала*/
+}
 .footer-division{ /* Подвал как раздел(блок) целиком*/
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #FFFFFF; /*ВЕСЬ текст - белый*/
+}
+.footer-division h2 { /*Надпись IT WEBSITE в подвале*/
+    width: 100%; /*занимает всю строку*/
+    text-align: center; /*выравн.-е по центру*/
+    /*fontsize: размер текста*/
+    margin-bottom: 50px;
 }
 
-.footer-phone-number{ /* № телефона в подвале*/
-    text-decoration: none
+.footer-phone-number, .footer-email, .footer-adress,
+.footer-requests { /*Значки в подвале и текст к ним*/
+    color: #838282;
 }
 
-.footer-email{
-    text-decoration: none
+.footer-division a { /*Текст ссылок*/
+    text-decoration: none;
+    color: white;
 }
 
-.footer-adress{
-
+.footer-quote {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-.footer-requests{
+@media (max-width: 768px) {
+    header {
+        margin: 15px;
+        top: 15px;
+    }
+    .header-division {
+        flex-direction: column; /* Элементы шапки встают друг под друга */
+        gap: 10px;
+        padding: 15px;
+    }
+    .header-division nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .main-division {
+        margin: 15px;
+    }
+
+    /* 3. ФОРМА ИЗ ТЗ: Перестраиваем всё в один столбец */
+    .leave-contacts-form form {
+        flex-direction: column;  /* Всё встает вертикально: инпут, инпут, кнопка */
+        align-items: stretch;    /* Растягивает инпуты и кнопку на всю ширину */
+        gap: 15px;
+    }
+    .button-submit {
+        max-width: 100%;
+        padding: 15px;
+    }
+    
+    /*подвал*/
+    footer {
+        margin: 15px;
+        padding: 20px;
+    }
+    .footer-division {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
 }
-
-.footer-quote{
-
-}
-
-
-
-
-
-
-

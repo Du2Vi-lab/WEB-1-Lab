@@ -2,39 +2,40 @@
 <html lang = "ru">
 <head>
     <link rel="stylesheet" href="src/assets/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <!--Потолок(header)-->
 	<header>
         <div class="header-division">
-            <p>Добро пожаловать на наш сайт</p> 
-            <!--я не придумал параграф лушче, который можно добавить в потолок-->
-            <h2 class="blue-text">IT WEBSITE</h2>
-        <nav>
-            <ul>
-                <a href="Services.html">Services</a>
-                <a href = "Media.html">Media</a>
-                <a href = "Cases.html">Cases</a>
-                <a href = "FAQ.html">FAQ</a>
-                <a href = "Contacts.html">Contacts</a>
-            </ul>
-            
-            <a href="+7 (111) 111 11 11">
-                <img src = "src/assets/img/lab3_img.jpg" 
-                alt = "Значёк телефона" class="phone-image">
-                +7 (111) 111 11 11
-            </a>
-            <a href="+7 (111) 111 11 11">
-                +7 (111) 111 11 11
-            </a>
+            <h2>IT WEBSITE</h2>
+            <nav>
+                <ul>
+                    <a href="Services.html">Services</a>
+                    <a href = "Media.html">Media</a>
+                    <a href = "Cases.html">Cases</a>
+                    <a href = "FAQ.html">FAQ</a>
+                    <a href = "Contacts.html">Contacts</a>
+                </ul>
+            </nav>
 
-            <a href="itcompany@mail.com">
-                <img src = "src/assets/img/lab3_img.jpg" 
-                alt = "Значёк письма" class="phone-image">
-                itcompany@mail.com
-            </a>
-        </nav>
+            <div class="header-contacts">
+                <a href="+7 (111) 111 11 11">
+                    <img src = "src/assets/img/lab3_img.jpg" 
+                    alt = "Значёк телефона" class="phone-image">
+                    +7 (111) 111 11 11
+                </a>
+                <a href="th+7 (111) 111 11 11">
+                    +7 (111) 111 11 11
+                </a>
+
+                <a href="itcompany@mail.com">
+                    <img src = "src/assets/img/lab3_img.jpg" 
+                    alt = "Значёк письма" class="phone-image">
+                    itcompany@mail.com
+                </a>
+            </div>
 
         </div>
 	</header>
@@ -42,86 +43,112 @@
     <hr>
 
     <!--Main-->
-    <!--тесты-->
 	<main>
+        
         <div class="main-division">
-            <aside class="aside-mama">
-                Мама мыла раму
-                <fieldset>
-                    <legend>Пожалуйста, представтесь</legend>
-                    <label for="name">Фамилия</label>
-                    <input id="name" placeholder="Пал"><br>
-                    <label for="name">Имя</label>
-                    <input id="name" placeholder="Палыч"><br>
-                    <label for="name">Отчество</label>
-                    <input id="name" placeholder="Нету(("><br>
-                </fieldset>
-            </aside>
+            <!--Приветствие-->
+            <div class="main-introduction">
+                <h1>
+                    Development of <span class="blue-text">mobile applications</span> 
+                    and <span class="blue-text">web services</span> of any complexity
+                </h1>
 
-            <aside class="aside-papa">
-                Папа пил пинокаладу
-                <fieldset>
-                    <legend>Пожалуйста, введите необходимую информацию</legend>
-                    <label for="name">Ваш номер телефона</label>
-                    <input id="name" placeholder="+7 *** *** ** **"><br>
-                    <label for="name">Номер вашей карты</label>
-                    <input id="name" placeholder="Да"><br>
-                    <label for="name">Цифры с обратной стороны карты</label>
-                    <input id="name" placeholder="1111"><br>
-                </fieldset>
-            </aside>
+                <p>
+                    We create mobile applications for iOS, Android that transfer your business to mobile
+                    applications of youre customer's devices
+                </p>
+            </div>
+
+            <!--Контакты-->
+            <div class="main-leave-contacts">
+                <h2>
+                    Leave youre contacts and we will call you back
+                    within 30 minutes
+                </h2>
+
+<!------------------------------------------------------------>
+                <div class="leave-contacts-form">
+                    <form>
+                        <label>
+                            <p>Phone number</p>
+                            <input type="text" name="creditcard" class="form-input" placeholder="+7 (111) 111 11 11">
+                        </label>
+
+                        <label>
+                            <p>Full name</p>
+                            <input type="text" name="creditcard" class="form-input" placeholder="Иван Иванов">
+                        </label>
+
+                        <button type="submit" class="button-submit">
+                            Get consultant
+                        </button>
+                    </form>
+                </div>
+<!------------------------------------------------------------>
+            </div>
         </div>
-
 	</main>
 
     <hr>
     <!--Подвал--> <!-- ГОТОВО -->
 	<footer>
         <!--div = division = раздел = блок-->
-        <h2>IT WEBSITE</h2>
-        
         <div class="footer-division">
+            <h2>IT WEBSITE</h2>
             <div class="footer-phone-number">
-                <p>Contact nums</p>
-                <a ref="tel:+7 (111) 111 11 11">
+                <p>
                     <img src = "src/assets/img/lab3_img.jpg" 
                     alt = "Значёк письма" class="phone-image">
+                    Contact nums
+                </p>
+
+                <a href="tel:+7 (111) 111 11 11">
                     +7 (111) 111 11 11
                 </a>
             </div>
 
             <div class="footer-email">
-                <p>Post</p>
-                <a href="mailto:utmn@mail.ru">
+                <p>
                     <img src = "src/assets/img/lab3_img.jpg" 
                     alt = "Значёк письма" class="email-image">
+                    Post
+                </p>
+
+                <a href="mailto:utmn@mail.ru">
                     utmn@mail.ru
                 </a>
             </div>
 
             <div class="footer-adress">
-                <p>Adress</p>
-                <a #href="City Tyumen, Republic st. 6">
+                <p>
                     <img src = "src/assets/img/lab3_img.jpg" 
                     alt = "Значёк адреса" class="adress-image">
-                    City Tyumen, Republic st. 6</a>
+                    Adress
+                </p>
+
+                <a href="City Tyumen, Republic st. 6">
+                    City Tyumen, Republic st. 6
+                </a>
             </div>
 
             <div class="footer-requests">
-                <p>Leave a request</p>
-                <a #href="Leave a request">
+                <p>
                     <img src = "src/assets/img/lab3_img.jpg" 
                     alt = "Значёк файла" class="file-image">
                     Leave a request
+                </p>
+
+                <a href="Leave a request">
+                    Leave a request
                 </a>
             </div>
-        </div>
 
-        <p class="footer-quote">
-            <img src = "src/assets/img/lab3_img.jpg" 
-            alt = "Логотип сайта" class="logo-image">
-            We work throughout world
-        </p>
+            <p class="footer-quote">
+                <img src = "src/assets/img/logotip.jpg" 
+                alt = "Логотип сайта" class="logo-image">
+                We work throughout world
+            </p>
+        </div>
 	</footer>
 </body>
 </html>
