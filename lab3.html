@@ -3,152 +3,160 @@
 <head>
     <link rel="stylesheet" href="src/assets/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
 
 <body>
-    <!--Потолок(header)-->
-	<header>
-        <div class="header-division">
-            <h2>IT WEBSITE</h2>
-            <nav>
-                <ul>
-                    <a href="Services.html">Services</a>
-                    <a href = "Media.html">Media</a>
-                    <a href = "Cases.html">Cases</a>
-                    <a href = "FAQ.html">FAQ</a>
-                    <a href = "Contacts.html">Contacts</a>
-                </ul>
-            </nav>
+    <div class="page-wrapper">
+        <header class="container">
+            <div class="header-division">
+                <h2>IT WEBSITE</h2>
+                <nav>
+                    <ul>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href = "Media.html">Media</a></li>
+                        <li><a href = "Cases.html">Cases</a></li>
+                        <li><a href = "FAQ.html">FAQ</a></li>
+                        <li><a href = "Contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
 
-            <div class="header-contacts">
-                <a href="+7 (111) 111 11 11">
-                    <img src = "src/assets/img/lab3_img.jpg" 
-                    alt = "Значёк телефона" class="phone-image">
-                    +7 (111) 111 11 11
-                </a>
-                <a href="th+7 (111) 111 11 11">
-                    +7 (111) 111 11 11
-                </a>
+                <div class="header-contacts">
+                    <a href="+7 (111) 111 11 11">
+                        <img src = "src/assets/img/lab3_img.jpg" 
+                        alt = "Значёк телефона" class="phone-image">
+                        +7 (111) 111 11 11
+                    </a>
+                    
+                    <a href="+7 (111) 111 11 11">
+                        +7 (111) 111 11 11
+                    </a>
 
-                <a href="itcompany@mail.com">
-                    <img src = "src/assets/img/lab3_img.jpg" 
-                    alt = "Значёк письма" class="phone-image">
-                    itcompany@mail.com
-                </a>
-            </div>
-
-        </div>
-	</header>
-
-    <hr>
-
-    <!--Main-->
-	<main>
-        
-        <div class="main-division">
-            <!--Приветствие-->
-            <div class="main-introduction">
-                <h1>
-                    Development of <span class="blue-text">mobile applications</span> 
-                    and <span class="blue-text">web services</span> of any complexity
-                </h1>
-
-                <p>
-                    We create mobile applications for iOS, Android that transfer your business to mobile
-                    applications of youre customer's devices
-                </p>
-            </div>
-
-            <!--Контакты-->
-            <div class="main-leave-contacts">
-                <h2>
-                    Leave youre contacts and we will call you back
-                    within 30 minutes
-                </h2>
-
-<!------------------------------------------------------------>
-                <div class="leave-contacts-form">
-                    <form>
-                        <label>
-                            <p>Phone number</p>
-                            <input type="text" name="creditcard" class="form-input" placeholder="+7 (111) 111 11 11">
-                        </label>
-
-                        <label>
-                            <p>Full name</p>
-                            <input type="text" name="creditcard" class="form-input" placeholder="Иван Иванов">
-                        </label>
-
-                        <button type="submit" class="button-submit">
-                            Get consultant
-                        </button>
-                    </form>
+                    <a href="itcompany@mail.com">
+                        <img src = "src/assets/img/lab3_img.jpg" 
+                        alt = "Значёк письма" class="phone-image">
+                        itcompany@mail.com
+                    </a>
                 </div>
-<!------------------------------------------------------------>
             </div>
-        </div>
-	</main>
+        </header>
 
-    <hr>
-    <!--Подвал--> <!-- ГОТОВО -->
-	<footer>
-        <!--div = division = раздел = блок-->
-        <div class="footer-division">
-            <h2>IT WEBSITE</h2>
-            <div class="footer-phone-number">
-                <p>
-                    <img src = "src/assets/img/lab3_img.jpg" 
-                    alt = "Значёк письма" class="phone-image">
-                    Contact nums
+
+
+        <main class="container">
+            <div class="main-division">
+                <article class="main-introduction">
+                    <h1>
+                        Development of <span class="blue-text">mobile applications</span> 
+                        and <span class="blue-text">web services</span> of any complexity
+                    </h1>
+
+                    <p>
+                        We create mobile applications for iOS, Android that transfer your business to mobile
+                        applications of youre customer's devices
+                    </p>
+                </article>
+
+                <!--- section -
+                (Темат.-й раздел) - Блок на одну из тем:"О нас", "Услуги", др. 
+                (внутри него: <h2>,...,<h6>)-->
+                <section class="main-leave-contacts">
+                    <h2>
+                        Leave youre contacts and we will call you back
+                        within 30 minutes
+                    </h2>
+
+                    <article class="leave-contacts-form">
+                    <!--- section -
+                    Что-то "самостоятельное", какая-то вырезка (пост, 
+                    новость, коммент и др.)-->
+                        <form>
+                            <label>
+                                <p>Phone number</p>
+                                <input type="text" name="creditcard" class="form-input" placeholder="+7 (111) 111 11 11">
+                            </label>
+
+                            <label>
+                                <p>Full name</p>
+                                <input type="text" name="creditcard" class="form-input" placeholder="Иван Иванов">
+                            </label>
+
+                            <button type="submit" class="button-submit">
+                                Get consultant
+                            </button>
+                        </form>
+                    </article>
+                </section>
+            </div>
+
+            <!--блок с двиг.картинками-->
+            <div class="screens">
+                <img src="src/assets/img/column-left.webp" alt="Экраны 1">
+                <img src="src/assets/img/column-right.webp" alt="Экраны 2">
+            </div>
+        </main>
+
+
+
+        <footer class="container">
+            <!--div = division = раздел = блок-->
+            <div class="footer-division">
+                <h2>IT WEBSITE</h2>
+                <div class="footer-phone-number">
+                    <p>
+                        <img src = "src/assets/img/lab3_img.jpg" 
+                        alt = "Значёк письма" class="phone-image">
+                        Contact nums
+                    </p>
+
+                    <a href="tel:+7 (111) 111 11 11">
+                        +7 (111) 111 11 11
+                    </a>
+                </div>
+
+                <div class="footer-email">
+                    <p>
+                        <img src = "src/assets/img/lab3_img.jpg" 
+                        alt = "Значёк письма" class="email-image">
+                        Post
+                    </p>
+
+                    <a href="mailto:utmn@mail.ru">
+                        utmn@mail.ru
+                    </a>
+                </div>
+
+                <div class="footer-adress">
+                    <p>
+                        <img src = "src/assets/img/lab3_img.jpg" 
+                        alt = "Значёк адреса" class="adress-image">
+                        Adress
+                    </p>
+
+                    <a href="City Tyumen, Republic st. 6">
+                        City Tyumen, Republic st. 6
+                    </a>
+                </div>
+
+                <div class="footer-requests">
+                    <p>
+                        <img src = "src/assets/img/lab3_img.jpg" 
+                        alt = "Значёк файла" class="file-image">
+                        Leave a request
+                    </p>
+
+                    <a href="Leave a request">
+                        Leave a request
+                    </a>
+                </div>
+
+                <p class="footer-quote">
+                    <img src = "src/assets/img/logotip.jpg" 
+                    alt = "Логотип сайта" class="logo-image">
+                    We work throughout world
                 </p>
-
-                <a href="tel:+7 (111) 111 11 11">
-                    +7 (111) 111 11 11
-                </a>
             </div>
-
-            <div class="footer-email">
-                <p>
-                    <img src = "src/assets/img/lab3_img.jpg" 
-                    alt = "Значёк письма" class="email-image">
-                    Post
-                </p>
-
-                <a href="mailto:utmn@mail.ru">
-                    utmn@mail.ru
-                </a>
-            </div>
-
-            <div class="footer-adress">
-                <p>
-                    <img src = "src/assets/img/lab3_img.jpg" 
-                    alt = "Значёк адреса" class="adress-image">
-                    Adress
-                </p>
-
-                <a href="City Tyumen, Republic st. 6">
-                    City Tyumen, Republic st. 6
-                </a>
-            </div>
-
-            <div class="footer-requests">
-                <p>
-                    <img src = "src/assets/img/lab3_img.jpg" 
-                    alt = "Значёк файла" class="file-image">
-                    Leave a request
-                </p>
-
-                <a href="Leave a request">
-                    Leave a request
-                </a>
-            </div>
-
-            <p class="footer-quote">
-                <img src = "src/assets/img/logotip.jpg" 
-                alt = "Логотип сайта" class="logo-image">
-                We work throughout world
-            </p>
-        </div>
-	</footer>
+        </footer>
+    </div>
 </body>
 </html>
