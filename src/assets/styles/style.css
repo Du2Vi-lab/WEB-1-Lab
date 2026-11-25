@@ -2,30 +2,16 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background: #b7cacc;
-    background-image: url("../img/20220316194338_1.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: cover;
-    margin: 0;
-    font-family: sans-serif;
-}
-
 /* Обрезает хвост картинок снизу и справа, убирает лишний скролл */
 .page-wrapper {
     position: relative;
-    overflow: hidden;
+    overflow: clip;
+
     padding: 30px 20px 40px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
 /* Единый контейнер для всего контента */
 .container {
     max-width: 1200px;
@@ -34,38 +20,66 @@ body {
     margin-right: auto;
 }
 
-/*------------ПОТОЛОК----------*/
-header {
-    background: #FFFFFF;
-    border-radius: 15px;
-    padding: 15px 30px;
-    margin-bottom: 40px;
+/*
+Стили по 3-й лабе
+*/
 
+body{
+    background: #ecf7f8;
+    background-image: url("../img/20220316194338_1.jpg");
+
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    margin: 0;
+    
+    padding-top: 30px; /* Отступ сверху для шапки */
+    font-family: sans-serif; /* Подключите ваш шрифт из fonts.css */
+    /* flex-direction: column; */
+
+    overflow-x: hidden;
+    position: relative;
+}
+/*------------ПОТОЛОК----------*/
+header{
+    background: #FFFFFF;
+    border-radius: 15px;         /* Скругление углов */
+    margin-bottom: 40px; /*отступы вертикальные и горизонтальные*/
+    margin-top: auto;
+
+    /*скролл с потолком*/
     position: sticky;
-    top: 30px;
-    z-index: 10;
+    /* border: 1px solid #000000; */
+    width: auto;
+
+    top: 40px; /*верхний отступ*/
+    z-index: 100; /*">" - НАД двиг.картинками, "<" - под*/
+
+    /*вниз вправо плотность цвет*/
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
 }
-
 .header-division {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #1F3F68;
-}
+    display: flex; /*выравнивает ВСЁ в 1 строку*/
+    align-items: center; /*в 1 строке все эл-ты по середине*/
+    justify-content: space-around; /*строка разделена на 3 части*/
 
-.header-division nav ul a {
+    /*text-decoration: none; почему-то не работает*/
+    color: #1F3F68; /*А это работает только на надпись IT WEBSITE*/
+    
+}
+/*Ссылки на др. страницы*/
+.header-division nav ul a { /*обращаюсь к надписям*/
     text-decoration: none;
     color: #333232;
 }
-
-.header-division nav ul {
+.header-division nav ul { /*структура*/
     display: flex;
     gap: 20px;
+
     list-style: none;
     padding: 0;
 }
-
+/*Ссылки телефонов и почты*/
 .header-contacts a {
     text-decoration: none;
     color: #356EAD;
@@ -74,37 +88,45 @@ header {
 
 .phone-image, .email-image, 
 .adress-image, .file-image,
-.logo-image {
+.logo-image { /*Значки телефона и письма*/
     width: 20px;
     height: 20px;
 }
 
 /*-----------ОСНОВА-----------*/
 main {
-    position: relative;
+    position: relative; /* Привязывает .screens к границам контейнера */
     margin-bottom: 40px;
     flex: 1;
 }
 
-.blue-text {
+.blue-text{
     color: #1F3F68;
 }
+.main-division{
+    margin: 40px;
 
-.main-division {
     position: relative;
     z-index: 9;
-    max-width: 560px;
+    /* display: flex;
+    gap: 20px;
+    text-decoration: none;
+    justify-content: space-around; */
+
+    /* background-image: url('../img/WEB1_wallpapers.jpg'); */
 }
 
-.main-introduction {
-    margin-top: 30px;
-    margin-bottom: 40px;
+.main-introduction{
+    margin-top: 50px;
+    max-width: 600px;
+    margin-bottom: 50px;
 }
-
-.main-leave-contacts {
+.main-leave-contacts{
+    max-width: 600px;
     background: #FFFFFF;
     border-radius: 15px;
     padding: 40px 30px;
+    margin-bottom: 50px;
 }
 
 .leave-contacts-form form {
@@ -112,62 +134,64 @@ main {
     align-items: flex-end;
     gap: 20px;
 }
-
 .leave-contacts-form label {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .form-input {
     border: none;
     border-bottom: 1px solid #e0e0e0;
-    outline: none;
+    outline: none; /* Удаляет контур при клике (фокусе) */
     padding: 10px 0;
-    width: 100%;
-    color: #333333;
-}
 
+    /* font-size: 20px; */ /*из-за увел.-я шрифта оно вылезает за пределы рамки*/
+    color: #333333;            /* Цвет текста */
+}
 .button-submit {
     background: #3264ee;
     color: #FFFFFF;
     border-radius: 15px;
-    border: none;
+    border: none; /*без рамки у кнопки*/
+    
     font-size: 16px;
     text-align: center;
+
     padding: 15px 20px;
-    min-width: 140px;
+    max-width: 140px;
+
     cursor: pointer;
 }
 
 /*-----------ПОДВАЛ----------*/
-footer {
+footer{
     background: #0f182c;
     border-radius: 15px;
-    padding: 30px 40px;
+    /* margin-top: auto; */
+    /* margin: 40px; отступы вертикальные и горизонтальные */
+    padding: 30px 40px; /*расширение рамки подвала*/
+
     position: relative;
     z-index: 10;
 }
-
-.footer-division {
+.footer-division{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    color: #FFFFFF;
+    color: #FFFFFF; /*ВЕСЬ текст - белый*/
 }
-
-.footer-division h2 {
-    width: 100%;
+.footer-division h2 { /*Надпись IT WEBSITE в подвале*/
+    width: 100%; /*занимает всю строку*/
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .footer-phone-number, .footer-email, .footer-adress,
-.footer-requests {
+.footer-requests { /*Значки в подвале и текст к ним*/
     color: #838282;
 }
 
-.footer-division a {
+.footer-division a { /*Текст ссылок*/
     text-decoration: none;
     color: white;
 }
@@ -178,46 +202,55 @@ footer {
     text-align: center;
     width: 100%;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-/*-----------ДВИЖ.КАРТИНКИ----------*/
+
+/*ДВИЖ.КАРТИНКИ*/
 .screens {
-    position: absolute;
-    top: -110px;
+    top: -350px;
     right: -20px;
     display: flex;
-    gap: 10px;
-    transform: rotate(-12deg);
+    rotate: calc(-12deg);
+    position: absolute;
     z-index: 1;
-    pointer-events: none;
 }
 
-.screens img {
+/* .screens img {
     height: fit-content;
-}
+} */
 
+/* Первая картинка едет вверх и обратно */
 .screens img:first-child {
-    width: 340px;
+    width: 340px; 
     animation: moveUp 5s ease-in-out infinite alternate;
 }
-
+/* Вторая картинка едет вниз и обратно */
 .screens img:last-child {
-    width: 250px;
+    width: 200px; 
     animation: moveDown 5s ease-in-out infinite alternate;
 }
 
 @keyframes moveUp {
     from { transform: translateY(0); }
-    to { transform: translateY(-15%); }
+    to { transform: translateY(-10%); }
 }
 
 @keyframes moveDown {
-    from { transform: translateY(-15%); }
+    from { transform: translateY(-10%); }
     to { transform: translateY(0); }
 }
 
-/*-----------Брейкпоинты----------*/
+
+
+
+
+
+
+
+
+
+/*Брейкпоинты*/
 @media (max-width: 1024px) {
     .screens {
         opacity: 0.3;
@@ -261,5 +294,19 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 20px;
+    }
+}
+@media (max-width: 425px) {
+    header,
+    .main-division,
+    footer {
+        margin: 8px;
+    }
+    .about-company h1,
+    .about-company h2 {
+        font-size: 24px;
+    }
+    .leave-contacts-form h2 {
+        font-size: 24px;
     }
 }
